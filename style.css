@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  --pale-blue: #e0e8ff;
+  --bright-blue: #3829e0;
+  --very-pale-blue: #f5f7ff;
+  --desaturated-blue: #7280a7;
+  --dark-blue: #1f2f56;
+  --hover-blue: #766cf1;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--dark-blue);
+  font-family: "Red Hat Display", sans-serif;
+  background: url("images/pattern-background-mobile.svg") no-repeat;
+  background-size: 100% auto;
+  background-color: var(--pale-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 24px;
+}
+
+/* Card styling */
+.card {
+  width: 100%;
+  max-width: 450px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.151826);
+}
+
+.card__hero-image {
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+}
+
+.card__content {
+  /* bottom padding = 32px - 15px for button */
+  padding: 32px 24px 17px;
+  text-align: center;
+}
+
+.card__title {
+  font-weight: 900;
+  font-size: 1.375em;
+  line-height: 1.318em;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.card__paragraph {
+  margin-top: 16px;
+  color: var(--desaturated-blue);
+  font-size: 0.938em;
+  line-height: 1.667em;
+}
+
+.card__plan {
+  text-align: left;
+  margin-top: 24px;
+}
+
+.card__footer {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__footer > * + * {
+  margin-top: 9px;
+}
+
+/* Plan styling */
+.plan {
+  background-color: var(--very-pale-blue);
+  border-radius: 11px;
+  display: flex;
+  align-items: center;
+  padding: 17px 16px;
+}
+
+.plan__icon {
+  height: 48px;
+  width: 48px;
+}
+
+.plan__content {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.plan__title {
+  color: var(--dark-blue);
+  font-weight: 900;
+  font-size: 0.875em;
+  line-height: 1.286em;
+}
+
+.plan__price {
+  color: var(--desaturated-blue);
+  font-size: 0.875em;
+  line-height: 1.286em;
+  margin-top: 3px;
+}
+
+.plan__action {
+  font-weight: 700;
+  color: var(--bright-blue);
+  font-size: 0.813em;
+  line-height: 1.308em;
+  text-decoration: underline;
+  transition: all 0.2s ease-in-out;
+}
+
+.plan__action:hover,
+.plan__action:active,
+.plan__action:focus {
+  color: var(--hover-blue);
+  text-decoration-color: transparent;
+}
+
+/* Button styling */
+.button {
+  font-size: 0.938em;
+  line-height: 1.333em;
+  padding: 15px;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.button--primary {
+  color: #ffffff;
+  background-color: var(--bright-blue);
+  border-radius: 11px;
+  box-shadow: 0 20px 20px rgba(56, 42, 225, 0.190291);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.button--primary:hover,
+.button--primary:active,
+.button--primary:focus {
+  background-color: var(--hover-blue);
+}
+
+.button--secondary {
+  color: var(--desaturated-blue);
+  transition: color 0.2s ease-in-out;
+}
+
+.button--secondary:hover,
+.button--secondary:active,
+.button--secondary:focus {
+  color: var(--dark-blue);
+}
