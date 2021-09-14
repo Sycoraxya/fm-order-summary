@@ -44,6 +44,10 @@
     line-height: 1.313em;
   }
 
+  .plan__price {
+    margin-top: 6px;
+  }
+
   .plan__action {
     font-size: 0.875em;
     line-height: 1.321em;
